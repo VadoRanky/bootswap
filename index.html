@@ -10,6 +10,70 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .section-2 img{
+        transition: 0.5s ease;
+      }
+      .section-2 img:hover{
+        transform: translateY(-20px);
+      }
+      .aside-section button{
+        margin: 50px;
+        text-align: center;
+        padding: 20px 50px;
+       
+      }
+      .aside-p{
+        text-align: center;
+        margin-bottom: 50px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 20px;
+      }
+      .form-section{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 50px;
+      }
+      [type="text"]{
+        width: 400px;
+        padding: 10px 30px;
+        margin-bottom: 5px;
+        background-color: rgb(227, 226, 225);
+        border: none;
+        border: 1px solid black;
+      }
+      [type="submit"]{
+        width: 400px;
+        padding: 10px 30px;
+        background-color: rgb(224, 225, 226);
+        border: none;
+        border: 1px solid black;
+        border-radius: 8px;
+      }
+      .form-section h2{
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .footer{
+        text-align: center;
+        font-size: 30px;
+        padding: 50px;
+        background-color: black;
+        color: white;
+      }
+      .footer p{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 20px;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -61,13 +125,59 @@
             <h1 class="section-h1" style="font-size: 200;">About</h1>
             <p class="section-p m-5" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: large; " >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime laudantium tempore quia sequi deserunt esse dolores doloremque vero id et reiciendis minima aut adipisci, voluptatibus, rem repudiandae sunt? Ut expedita quos sapiente. Quae quas et adipisci cupiditate fugit illum voluptatem, aperiam, cumque, exercitationem unde maiores culpa distinctio dolores! Consequatur, molestiae!</p>
         </section>
-        <section>
+        <section class="section-2 d-flex bg-body-secondary p-5  text-center  ">
           <div>
-            <h1></h1>
-            <a href="https://bitswap-vado.netlify.app"><img src="Screenshot 2026-02-18 033739.png" alt=""></a>
+            <h1>BitSwap</h1>
+            <a href="https://bitswap-vado.netlify.app"><img src="Screenshot 2026-02-18 033739.png" alt="" class="w-75 rounded-3"></a>
+          </div>
+          <div>
+            <h1>vado webpage</h1>
+            <a href="https://vadoweb.netlify.app/"><img src="Screenshot 2026-02-18 033926.png" alt="" class="w-75 rounded-3"></a>
+          </div>
+          <div>
+            <h1>PraRoz</h1>
+            <a href="https://practicevado.netlify.app/"><img src="Screenshot 2026-02-18 034049.png" alt="" class="w-75 rounded-3"></a>
           </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+      <aside class="aside-section">
+      <div>
+       <button><h1>CONTACT</h1></button> 
+        <p class="aside-p">Reach out to me for any software development job by sending a mail or filling the form below</p>
+      </div>
+      <div class="form-section ">
+        <div>
+           <h2>REACH OUT</h2>
+         <form>
+          <input type="text" placeholder=" Username"/><br>
+          <input type="text" placeholder="Email"><br>
+          <input type="text" placeholder="Subject"><br>
+          <input type="text" placeholder="Message"><br>
+          <input type="submit" value="Submit"><br>
+         </form>
+        </div>
+        <div>
+          <div>
+             <i class="fa-solid fa-phone"></i><h3>PHONE</h3>
+           <P>+234(09010194473)</P>
+          </div>
+          <div>
+           <i class="fa-solid fa-envelope"></i><h3>EMAIL</h3>
+           <p>adeboyekayode112@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      </aside>
+      <section class="footer">
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <p>2026 Adeboye Kayode John All Right Reserved</p>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
